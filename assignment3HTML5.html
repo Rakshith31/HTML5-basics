@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+</head>
+<style>
+    section{
+        border: 1px solid black;
+    }
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+</style>
+
+<body>
+    <section>
+        <center>
+            <h1>Awesome Online videos</h1>
+            <img src="windmill.png" alt="AWV logo">
+        </center>
+    </section>
+        
+    <section>
+        <center>
+            <video width="500" height="500" id="videoOfTheWeek">
+                <source src="Take.The.Ball,.Pass.The.Ball.2018.720p.BluRay.x264-[YTS.AM].mp4" type="video/mp4"> //Add your own video file name here. Video file should be in same location as this HTML5 file
+            </video>
+            <table>
+                <td><button id="videoOfTheWeek" onclick="document.getElementById('videoOfTheWeek').play();">Play</button></td>
+                <td><button id="videoOfTheWeek" onclick="document.getElementById('videoOfTheWeek').pause();">Pause</button></td>
+            </table>
+        </center>
+    </section>
+</body>
+</html>

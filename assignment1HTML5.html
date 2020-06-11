@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Trading App</title>
+</head>
+<style>
+    table, td, tr{
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <table>
+        <tr>
+            <td><b>TICKER</b></td>
+            <td><b>PRICE</b></td>
+        </tr>
+        <tr>
+            <td>WIPRO</td>
+            <td>298.45</td>
+        </tr>
+        <tr>
+            <td>INFY</td>
+            <td>949.95</td>
+        </tr>
+        <tr>
+            <td>TCS</td>
+            <td>2713.70</td>
+        </tr>
+        <tr>
+            <td>TECHM</td>
+            <td>485.85</td>
+        </tr>
+    </table>
+
+    <h1>Stock Trading</h1>
+    <table>
+        <form onsubmit="alert('Submitted successfully');">
+            <tr>
+                <td>Ticker: </td>
+                <td><input type="text"></td>
+            </tr>
+            <tr>
+                <td>Quantity:</td>
+                <td><input id="Quantity" type="number" min="10" max="100" step="10"></td> //Stock should be min = 10 and max = 100 and only multiples of 10 are allowed(step = 10)
+            </tr>
+            <tr>
+                <td><input type="submit"></td>
+            </tr>
+        </form>
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xena Events</title>
+</head>
+<style>
+    form{
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+    <center>
+        <header>
+            <h1>&#129312 Xena Events</h1>
+        </header>
+
+        //All fields having required so it will be mandatory to fill
+        <form onsubmit="alert('Submitted successfully');">
+            Name : <input type="text" pattern="[A-Za-z]+" required> //Pattern matching used to match only alphabets
+            <p>&nbsp;</p>
+            Age : <input type="number" min="18" required> //Min value set to 18. Cannot enter age less than 18
+            <p>&nbsp;</p>
+            Email ID : <input type="email" required>
+            <p>&nbsp;</p>
+            City : <input list="city" type="text" required> //List used to include datalist. Different city names other than datalist can also be used
+            <p>&nbsp;</p>
+            <datalist id="city"> 
+                <option value="Rajkot"/>
+                <option value="Vizag"/>
+                <option value="Bangalore"/>
+            </datalist>
+            
+            <input type="submit">
+        
+        </form>
+    </center>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BCCI Score chart</title>
+</head>
+<script>
+    window.onload = function(){
+        var canvas = document.getElementById("runsCanvas");
+        var context = canvas.getContext("2d");
+        //Drawing here
+
+        //Drawing Over and Runs text in canvas
+        context.fillText("Over", 15, 10);
+        context.fillText("Runs", 5, 20);
+
+        //Drawing 5 and 40 text in canvas
+        context.fillText("5", 5, 50);
+        context.fillText("40", 40, 10);
+
+        //Drawing line from (5, 40) to (10, 75)
+        context.moveTo(50, 40);
+        context.lineTo(75, 100);
+        context.stroke();
+
+        //Drawing 10 and 75 text in canvas
+        context.fillText("10", 5, 100);
+        context.fillText("75", 75, 10);
+
+        //Drawing 15 and 140 text in canvas
+        context.fillText("15", 5, 150);
+        context.fillText("140", 140, 10);
+
+        //Drawing line from (10, 75) to (15, 140)
+        context.moveTo(75, 100);
+        context.lineTo(140, 150);
+        context.stroke();
+
+        
+    }
+</script>
+<body>
+    <center>
+        <h3>BCCI Runs Line Chart</h3>
+        <canvas id="runsCanvas" width="250" height="250" style="border: 1px solid black;"> //Creating a canvas
+
+        </canvas>
+    </center>
+    
+</body>
+</html>
